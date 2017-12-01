@@ -1,0 +1,248 @@
+body {
+    font-family: 'Muli', sans-serif;
+    padding: 15px;
+}
+h1 {
+    font-size: 48px;
+    color: #6897BB;
+}
+h3 {
+    font-size: 36px;
+    color: #6897BB;
+}
+h4 {
+    font-size: 18px;
+    color: #6897BB;
+    font-weight: 400;
+}
+p {
+    font-size: 16px;
+    line-height: 1.25;
+    
+}
+.map {
+    width: 40vw;
+}
+.ko {
+    height: 300px;
+}
+.p {
+    display: block;
+    font-size: 16px;
+    line-height: 1.25;
+    background-color: #94A829;
+    padding: 30px;
+    border: 3px #6897BB solid;
+    border-radius: 5px;
+    width: 100%;
+}
+.empty {
+    position: relative;
+    display: block;
+    background-color: #d2d2d2;
+    width: 40vw;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.heading {
+    z-index: 100;
+    max-width: 60vw;
+    padding: 15px;
+}
+.container {
+    display: flex;
+}
+.col-left {
+    display: inline-block;
+    z-index: 100;
+    max-width: 40vw;
+    padding: 15px;
+    float: left;   
+    clear: right;
+    margin-right: 35px;
+}
+.col-right {
+    display: inline-block;
+    z-index: 100;
+    max-width: 40vw;
+    padding: 15px;
+    float: right;
+    clear: left;
+    margin-left: 35px;
+}
+.bike-cat-div {
+    z-index: 0;
+    display: block;
+    background-color: #fff;
+    height: 30px;  
+}
+.bike-cat-div2 {
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #fff;
+    height: 100vh; 
+    width: 30px;
+}
+.bike-cat-div3 {
+    z-index: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: #fff;
+    height: 100vh; 
+    width: 30px;
+}
+.bike-cat-1 {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    -webkit-animation: slide-horiz 3s alternate-reverse infinite;
+    animation: slide-horiz 3s alternate-reverse infinite;
+}
+.bike-cat-2 {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    -webkit-animation: slide-vert 3s alternate-reverse infinite;
+    animation: slide-vert 3s alternate-reverse infinite;
+}
+.bike-cat-3 {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    -webkit-animation: slide-vert 3s alternate-reverse infinite;
+    animation: slide-vert 3s alternate-reverse infinite;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+.row {
+    display: flex;
+}
+#one {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+#two {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+#three {
+-webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+.fixed {
+    position: fixed;
+    color: #6897BB;
+    opacity: .5;
+}
+#vletter1, #vletter2, #vletter3, #vletter4 {
+    position: relative;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 30px;
+    -webkit-animation: slide-vert 4s alternate-reverse infinite;
+    animation: slide-vert 4s alternate-reverse infinite;
+}
+#vletter2 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+#vletter3 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+#vletter4 {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+#hletter1, #hletter2, #hletter3, #hletter4, #hletter5 {
+    position: relative;
+    display: block;
+    font-size: 48px;
+    font-weight: 600;
+    margin: 30px;
+    -webkit-animation: slide-horiz 3s alternate-reverse infinite;
+    animation: slide-horiz 3s alternate-reverse infinite;
+}
+#hletter2 {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+#hletter3 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+#hletter4 {
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+@-webkit-keyframes slide-horiz{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(40vw);
+    }
+}
+@-webkit-keyframes slide-vert{
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(85vh);
+    }
+}
+
+/*media query*/
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 36px;
+    }
+    
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    .container {
+        display: block;
+    }
+    .p {
+        width: 100%;
+    }
+    .col-right {
+        display: none;
+    }
+    .col-left {
+    display: inline-block;
+    z-index: 100;
+    max-width: calc(100% - 90px);
+    padding: 15px;
+}
+.col-right {
+    display: none;
+    z-index: 100;
+    max-width: 40vw;
+    padding: 15px;
+    float: right;
+    clear: left;
+    margin-left: 40px;
+}
+
+    @-webkit-keyframes slide-horiz{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(85vw);
+    }
+}
+}
