@@ -24,7 +24,9 @@ p {
     width: 40vw;
 }
 .ko {
-    height: 300px;
+    position: absolute;
+    width: 100%;
+    height: auto;
 }
 .p {
     display: block;
